@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vitmaecomerce/routes.dart';
-import 'package:vitmaecomerce/screens/profile/profile_screen.dart';
+// import 'package:vitmaecomerce/screens/profile/profile_screen.dart';
 import 'package:vitmaecomerce/screens/splash/splash_screen.dart';
 import 'package:vitmaecomerce/theme.dart';
 

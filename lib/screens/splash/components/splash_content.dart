@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
@@ -13,6 +15,7 @@ class SplashContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    debugPrint('in SplashContent');
     return Column(
       children: <Widget>[
         Spacer(),

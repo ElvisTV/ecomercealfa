@@ -29,6 +29,13 @@ class _BodyState extends State<Body> {
       "image": "assets/images/splash_3.png"
     },
   ];
+
+  @override
+  void initState() {
+    debugPrint('in Class Body');
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(

@@ -1,5 +1,9 @@
+// import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:vitmaecomerce/models/Cart.dart';
+import 'package:vitmaecomerce/providers/elemento_provider.dart';
+import 'package:provider/provider.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';
@@ -11,9 +15,10 @@ class CartCard extends StatelessWidget {
   }) : super(key: key);
 
   final Cart cart;
-
+ 
   @override
   Widget build(BuildContext context) {
+   
     return Row(
       children: [
         SizedBox(

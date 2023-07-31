@@ -29,7 +29,7 @@ class _BirdState extends State<Bird> {
     debugPrint('Buenos días Flutter Senior');
     
     final elementoProducto = Provider.of<ElementoProvider>(context);
-    debugPrint(elementoProducto.ProductosVitma[0].descripcion);
+    // debugPrint(elementoProducto.ProductosVitma[0].descripcion);
     debugPrint('Hasta Luego');
   
     return Container(

@@ -20,7 +20,6 @@ class AppState extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: ( _ ) => ElementoProvider(), lazy: false)
-
       ],
       child: MyApp(),
     );
@@ -32,14 +31,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    
-    print('in file main');
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Carrito',
       theme: theme(),
       // home: SplashScreen(),
-      // We use routeName so that we dont need to remember the name
       // initialRoute: SplashScreen.routeName,
       // routes: routes,
       initialRoute: 'home',

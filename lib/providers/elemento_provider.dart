@@ -35,8 +35,6 @@ class ElementoProvider extends ChangeNotifier{
     return response.body;
   }
 
-
-
   getProductosVitma() async {
     final jsonData = await this._getJsonData('api/listaproducto/productovitma');
     final disponibleResponse = DisponibleResponse.fromJson(jsonData);

@@ -23,27 +23,15 @@ class _BirdState extends State<Bird> {
   void grow() {
     setState(() { _size += 0.1; });
   }
-  // @override
-  // void initState() {
-  //   final elementoProducto = Provider.of<ElementoProvider>(context);
-  //   debugPrint(elementoProducto.ProductosVitma.length.toInt() as String?);
-  //   super.initState();
-  // }
-
 
   @override
   Widget build(BuildContext context) {
-    debugPrint('Flutter Senior');
+    debugPrint('Buenos días Flutter Senior');
     
-    // final ElementoProvider elementoProducto = Provider.of<ElementoProvider>(context);
-    // debugPrint(elementoProducto.ProductosVitma.length.toInt() as String?);
-
-    // return Provider<ElementoProvider>(
-    //   create: (_) => ElementoProvider(),
-    //   // Will throw a ProviderNotFoundError, because `context` is associated
-    //   // to the widget that is the parent of `Provider<Example>`
-    //   child: Text(context.watch<ElementoProvider>().toString()),
-    // );
+    final elementoProducto = Provider.of<ElementoProvider>(context);
+    debugPrint(elementoProducto.ProductosVitma[0].descripcion);
+    debugPrint('Hasta Luego');
+  
     return Container(
       color: widget.color,
       transform: Matrix4.diagonal3Values(_size, _size, 1.0),
